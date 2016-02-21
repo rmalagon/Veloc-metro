@@ -20,7 +20,6 @@ import UIKit
 enum Velocidades: Int{
     case Apagado = 0, VelocidadBaja = 20, VelocidadMedia = 50, VelocidadAlta = 120
     
-    
     init (velocidadInicial: Velocidades){
         self.init(velocidadInicial: velocidadInicial)
     }
@@ -28,11 +27,9 @@ enum Velocidades: Int{
     init( ){
         self = .Apagado
     }
-    
 }
 
 class Auto{
-    
     var velocidad = Velocidades()
     
     init (velocidad: Int){
@@ -40,12 +37,9 @@ class Auto{
     }
     
     func cambioDeVelocidad() -> (actual: Int, velocidadEnCadena: String){
-        
         //Mostrar la velocidad actual
-        
         //Actualizar la velocidad y devolver tupla
     }
-    
 }
 
 
