@@ -16,12 +16,43 @@ Review Criteria
 
 import UIKit
 
+
 enum Velocidades: Int{
     case Apagado = 0, VelocidadBaja = 20, VelocidadMedia = 50, VelocidadAlta = 120
+    
+    
+    init (velocidadInicial: Velocidades){
+        self.init(velocidadInicial: velocidadInicial)
+    }
+    
+    init( ){
+        self = .Apagado
+    }
+    
+}
+
+class Auto{
+    
+    var velocidad = Velocidades()
+    
+    init (velocidad: Int){
+        self.velocidad
+    }
+    
+    func cambioDeVelocidad() -> (actual: Int, velocidadEnCadena: String){
+        
+        //Mostrar la velocidad actual
+        
+        //Actualizar la velocidad y devolver tupla
+    }
+    
 }
 
 
 
+var auto = Auto(velocidad: 5)
+
+auto.velocidad.rawValue
 
 
 
@@ -31,17 +62,4 @@ enum Velocidades: Int{
 
 
 
-enum Ciudad : Int{      //El nombre de la enumeración tiene que empezar con línea mayúscula
-    
-    case Cancun = 450, Guadalajara = 10, DF = 78 , Monterrey = 512, Merida
-    
-}
 
-func calcularDistancia (ciudad: Ciudad) -> Int{
-    
-    return Ciudad.Cancun.rawValue - ciudad.rawValue     // el rawvalue es una propiedad de de la enumeración que me da acceso al valor asignado a cada caso.
-    
-    
-}
-
-calcularDistancia(Ciudad.Monterrey)
