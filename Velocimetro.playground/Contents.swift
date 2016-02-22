@@ -25,7 +25,7 @@ enum Velocidades: Int{
     }
     
     init (velocidadInicial: Velocidades){
-        self.init(velocidadInicial: velocidadInicial)   // Diferencias
+        self.init(velocidadInicial: velocidadInicial)
     }
     
 }
@@ -33,7 +33,7 @@ enum Velocidades: Int{
 class Auto{
     var velocidad = Velocidades()
     
-    init (velocidad: Velocidades){                              // Diferencias
+    init (velocidad: Velocidades){                              
         self.velocidad
     }
 
